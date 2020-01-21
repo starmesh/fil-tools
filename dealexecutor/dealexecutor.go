@@ -11,7 +11,8 @@ var (
 	log = logging.Logger("deal-executor")
 )
 
-// DealExecutor listens for a trigger
+// DealExecutor listens for a trigger for an on-chain cid and
+// calls a redoer.
 type DealExecutor struct {
 	dt DealTrigger
 	dr DealRedoer
